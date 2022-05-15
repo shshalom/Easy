@@ -27,12 +27,12 @@
 		49CA086A25A598840036FF42 /* EasyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA086925A598840036FF42 /* EasyScrollView.swift */; };
 		49CA086D25A599B10036FF42 /* EasyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA086C25A599B10036FF42 /* EasyTextField.swift */; };
 		49CA087025A59A360036FF42 /* EasyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA086F25A59A360036FF42 /* EasyLabel.swift */; };
-		58703149A0C9B1425A9DAE50 /* Pods_Easy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082780802F324F74D66C6C9E /* Pods_Easy.framework */; };
+		FB5C69E6794A6BC030589B1B /* Pods_EasyUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C9AECAFE009550EA23B080 /* Pods_EasyUIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		082780802F324F74D66C6C9E /* Pods_Easy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		490111102570246400F78A9E /* Easy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Easy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C9AECAFE009550EA23B080 /* Pods_EasyUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		490111102570246400F78A9E /* EasyUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		490111132570246400F78A9E /* Easy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Easy.h; sourceTree = "<group>"; };
 		490111142570246400F78A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4901112E2570248E00F78A9E /* EasyGeometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyGeometry.swift; sourceTree = "<group>"; };
@@ -54,8 +54,10 @@
 		49CA086925A598840036FF42 /* EasyScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyScrollView.swift; sourceTree = "<group>"; };
 		49CA086C25A599B10036FF42 /* EasyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTextField.swift; sourceTree = "<group>"; };
 		49CA086F25A59A360036FF42 /* EasyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyLabel.swift; sourceTree = "<group>"; };
+		6AF2FBBA177845FA96D81747 /* Pods-EasyUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyUIKit.release.xcconfig"; path = "Target Support Files/Pods-EasyUIKit/Pods-EasyUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		7B350E82D757E2AE6A42D82D /* Pods-Easy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy.release.xcconfig"; path = "Target Support Files/Pods-Easy/Pods-Easy.release.xcconfig"; sourceTree = "<group>"; };
 		9DF55C2EE74749B5F12C8C69 /* Pods-Easy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy.debug.xcconfig"; path = "Target Support Files/Pods-Easy/Pods-Easy.debug.xcconfig"; sourceTree = "<group>"; };
+		E6643A0CCF095CE65448D6A8 /* Pods-EasyUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyUIKit.debug.xcconfig"; path = "Target Support Files/Pods-EasyUIKit/Pods-EasyUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58703149A0C9B1425A9DAE50 /* Pods_Easy.framework in Frameworks */,
+				FB5C69E6794A6BC030589B1B /* Pods_EasyUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +77,8 @@
 			children = (
 				9DF55C2EE74749B5F12C8C69 /* Pods-Easy.debug.xcconfig */,
 				7B350E82D757E2AE6A42D82D /* Pods-Easy.release.xcconfig */,
+				E6643A0CCF095CE65448D6A8 /* Pods-EasyUIKit.debug.xcconfig */,
+				6AF2FBBA177845FA96D81747 /* Pods-EasyUIKit.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -92,7 +96,7 @@
 		490111112570246400F78A9E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				490111102570246400F78A9E /* Easy.framework */,
+				490111102570246400F78A9E /* EasyUIKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,7 +156,7 @@
 		BD84C9A4AA51918E8A2FDD6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				082780802F324F74D66C6C9E /* Pods_Easy.framework */,
+				12C9AECAFE009550EA23B080 /* Pods_EasyUIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,9 +175,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4901110F2570246400F78A9E /* Easy */ = {
+		4901110F2570246400F78A9E /* EasyUIKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 490111242570246400F78A9E /* Build configuration list for PBXNativeTarget "Easy" */;
+			buildConfigurationList = 490111242570246400F78A9E /* Build configuration list for PBXNativeTarget "EasyUIKit" */;
 			buildPhases = (
 				0D6801D62A9C8947896195A1 /* [CP] Check Pods Manifest.lock */,
 				4901110B2570246400F78A9E /* Headers */,
@@ -185,9 +189,9 @@
 			);
 			dependencies = (
 			);
-			name = Easy;
+			name = EasyUIKit;
 			productName = Easy;
-			productReference = 490111102570246400F78A9E /* Easy.framework */;
+			productReference = 490111102570246400F78A9E /* EasyUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -205,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4901110A2570246400F78A9E /* Build configuration list for PBXProject "Easy" */;
+			buildConfigurationList = 4901110A2570246400F78A9E /* Build configuration list for PBXProject "EasyUIKit" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -218,7 +222,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4901110F2570246400F78A9E /* Easy */,
+				4901110F2570246400F78A9E /* EasyUIKit */,
 			);
 		};
 /* End PBXProject section */
@@ -249,7 +253,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Easy-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EasyUIKit-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -412,12 +416,12 @@
 		};
 		490111252570246400F78A9E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DF55C2EE74749B5F12C8C69 /* Pods-Easy.debug.xcconfig */;
+			baseConfigurationReference = E6643A0CCF095CE65448D6A8 /* Pods-EasyUIKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 7D55U9P4S7;
+				DEVELOPMENT_TEAM = SLN7CQWWXC;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -429,7 +433,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.eliran.Easy;
+				PRODUCT_BUNDLE_IDENTIFIER = git.shshalom.EasyUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -440,12 +444,12 @@
 		};
 		490111262570246400F78A9E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B350E82D757E2AE6A42D82D /* Pods-Easy.release.xcconfig */;
+			baseConfigurationReference = 6AF2FBBA177845FA96D81747 /* Pods-EasyUIKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 7D55U9P4S7;
+				DEVELOPMENT_TEAM = SLN7CQWWXC;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -457,7 +461,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.eliran.Easy;
+				PRODUCT_BUNDLE_IDENTIFIER = git.shshalom.EasyUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -468,7 +472,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4901110A2570246400F78A9E /* Build configuration list for PBXProject "Easy" */ = {
+		4901110A2570246400F78A9E /* Build configuration list for PBXProject "EasyUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				490111222570246400F78A9E /* Debug */,
@@ -477,7 +481,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		490111242570246400F78A9E /* Build configuration list for PBXNativeTarget "Easy" */ = {
+		490111242570246400F78A9E /* Build configuration list for PBXNativeTarget "EasyUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				490111252570246400F78A9E /* Debug */,

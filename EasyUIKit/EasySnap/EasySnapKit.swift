@@ -6,6 +6,9 @@
 //  Copyright © 2020 Shalom Shwaitzer & Eliran Sharabi. All rights reserved.
 //
 
+#if canImport(SnapKit)
+
+
 import Foundation
 import SnapKit
 
@@ -47,3 +50,5 @@ public extension ConstraintMakerRelatable {
         }
     }
 }
+
+#endif

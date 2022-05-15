@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version      = "0.1.0"
   s.summary      = "UIKit helper"
   s.description  = "A quickly helper to create and adjust UIViews"
-  s.homepage     = "https://github.com/eliransha88/Easy"
+  s.homepage     = "https://github.com/shshalom/Easy"
   s.license      = "MIT"
   s.author       = { "Shalom & eliransha88" => "shalom.shwaitzer@gmail.com eliransha88@gmail.com" }
   s.platform =:ios, '1.0'

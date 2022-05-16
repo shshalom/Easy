@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "EasyUIKit"
-  spec.version      = "0.0.1"
+  spec.version      = "1.0.0"
   
   spec.summary      = "EasyUIKit is a helper that aims to create a clean UI."
   spec.description  = "A quick helper to create and adjust UIViews"
@@ -23,8 +23,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '13.0'
   spec.source       = { :git => "https://github.com/shshalom/Easy.git", :tag => "#{spec.version}" }
   spec.dependency 'SnapKit', '~> 5.6.0'
-  spec.subspec "Core" do |ss|
-    ss.source_files = "EasyUIKit/Source/**/*"
-    ss.exclude_files = "EasyUIKit/SupportingFiles/*.plist"
-  end
+  spec.source_files = 'EasyUIKit/Source/**/*.swift'
+  spec.exclude_files = 'EasyUIKit/SupportingFiles/*.plist'
+  
 end 

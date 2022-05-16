@@ -6,9 +6,6 @@
 //  Copyright © 2020 Shalom Shwaitzer & Eliran Sharabi. All rights reserved.
 //
 
-#if canImport(SnapKit)
-
-
 import Foundation
 import SnapKit
 
@@ -51,4 +48,8 @@ public extension ConstraintMakerRelatable {
     }
 }
 
-#endif
+public extension ConstraintMaker {
+    func aspectRatio(_ x: Int, by y: Int, self instance: ConstraintView) {
+        self.width.equalTo(instance.snp.height).multipliedBy(x / y)
+    }
+}

@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import SnapKit
 
 public extension UIView {
     
@@ -517,11 +516,5 @@ public extension Int {
 public extension UIViewController {
     func insideNavigation() -> UINavigationController {
         return UINavigationController(rootViewController: self)
-    }
-}
-
-public extension ConstraintMaker {
-     func aspectRatio(_ x: Int, by y: Int, self instance: ConstraintView) {
-        self.width.equalTo(instance.snp.height).multipliedBy(x / y)
     }
 }

@@ -109,6 +109,7 @@
 		4901112D2570247B00F78A9E /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4901113D2570248E00F78A9E /* EasySnapKit.swift */,
 				4901113A2570248E00F78A9E /* EasyAlerts.swift */,
 				4901113C2570248E00F78A9E /* EasyBundles.swift */,
 				490111392570248E00F78A9E /* EasyColors.swift */,
@@ -134,19 +135,10 @@
 		49011152257024FF00F78A9E /* EasyUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				49011157257026A100F78A9E /* EasySnap */,
 				4901112D2570247B00F78A9E /* Source */,
 				490111122570246400F78A9E /* SupportingFiles */,
 			);
 			path = EasyUIKit;
-			sourceTree = "<group>";
-		};
-		49011157257026A100F78A9E /* EasySnap */ = {
-			isa = PBXGroup;
-			children = (
-				4901113D2570248E00F78A9E /* EasySnapKit.swift */,
-			);
-			path = EasySnap;
 			sourceTree = "<group>";
 		};
 		BD84C9A4AA51918E8A2FDD6A /* Frameworks */ = {

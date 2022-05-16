@@ -24,7 +24,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/shshalom/Easy.git", :tag => "#{spec.version}" }
   spec.dependency 'SnapKit', '~> 5.6.0'
   spec.subspec "Core" do |ss|
-    ss.source_files = "EasyUIKit/Source/**/*.swift"
+    ss.source_files = "EasyUIKit/Source/**/*"
     ss.exclude_files = "EasyUIKit/SupportingFiles/*.plist"
   end
 end 

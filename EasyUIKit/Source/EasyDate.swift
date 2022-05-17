@@ -1,6 +1,6 @@
 //
-// Created by shalom on 10/01/2022.
-// Copyright © 2022-present PlanGrid. All rights reserved.
+//  Created by Shalom Shwaitzer on 29/07/2018.
+//  Copyright © 2020 Shalom Shwaitzer & Eliran Sharabi. All rights reserved.
 //
 
 import UIKit

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		490111212570246400F78A9E /* Easy.h in Headers */ = {isa = PBXBuildFile; fileRef = 490111132570246400F78A9E /* Easy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4901113E2570248E00F78A9E /* EasyGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901112E2570248E00F78A9E /* EasyGeometry.swift */; };
-		4901113F2570248E00F78A9E /* EasyCollectionViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901112F2570248E00F78A9E /* EasyCollectionViews.swift */; };
 		490111402570248E00F78A9E /* EasyNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490111302570248E00F78A9E /* EasyNavigationBar.swift */; };
 		490111412570248E00F78A9E /* EasyTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490111312570248E00F78A9E /* EasyTransform.swift */; };
 		490111422570248E00F78A9E /* EasyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490111322570248E00F78A9E /* EasyTextView.swift */; };
@@ -24,9 +23,15 @@
 		4901114B2570248E00F78A9E /* EasyPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901113B2570248E00F78A9E /* EasyPageControl.swift */; };
 		4901114C2570248E00F78A9E /* EasyBundles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901113C2570248E00F78A9E /* EasyBundles.swift */; };
 		4901114D2570248E00F78A9E /* EasySnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901113D2570248E00F78A9E /* EasySnapKit.swift */; };
-		49CA086A25A598840036FF42 /* EasyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA086925A598840036FF42 /* EasyScrollView.swift */; };
 		49CA086D25A599B10036FF42 /* EasyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA086C25A599B10036FF42 /* EasyTextField.swift */; };
 		49CA087025A59A360036FF42 /* EasyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA086F25A59A360036FF42 /* EasyLabel.swift */; };
+		8FFB2BDC2832989200389B95 /* EasyArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB2BDB2832989200389B95 /* EasyArray.swift */; };
+		8FFB2BDE28329EA200389B95 /* EasyApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB2BDD28329EA200389B95 /* EasyApplication.swift */; };
+		8FFB2BE028329F1500389B95 /* EasyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB2BDF28329F1500389B95 /* EasyButton.swift */; };
+		8FFB2BE22832A06100389B95 /* EasyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB2BE12832A06100389B95 /* EasyImage.swift */; };
+		8FFB2BE42832A09600389B95 /* EasyDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB2BE32832A09600389B95 /* EasyDate.swift */; };
+		8FFB2BE82832A0A100389B95 /* EasyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB2BE62832A0A000389B95 /* EasyScrollView.swift */; };
+		8FFB2BEA2832A1E400389B95 /* EasyCollectionViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB2BE92832A1E400389B95 /* EasyCollectionViews.swift */; };
 		FB5C69E6794A6BC030589B1B /* Pods_EasyUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C9AECAFE009550EA23B080 /* Pods_EasyUIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +41,6 @@
 		490111132570246400F78A9E /* Easy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Easy.h; sourceTree = "<group>"; };
 		490111142570246400F78A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4901112E2570248E00F78A9E /* EasyGeometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyGeometry.swift; sourceTree = "<group>"; };
-		4901112F2570248E00F78A9E /* EasyCollectionViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyCollectionViews.swift; sourceTree = "<group>"; };
 		490111302570248E00F78A9E /* EasyNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyNavigationBar.swift; sourceTree = "<group>"; };
 		490111312570248E00F78A9E /* EasyTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyTransform.swift; sourceTree = "<group>"; };
 		490111322570248E00F78A9E /* EasyTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyTextView.swift; sourceTree = "<group>"; };
@@ -51,10 +55,16 @@
 		4901113B2570248E00F78A9E /* EasyPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyPageControl.swift; sourceTree = "<group>"; };
 		4901113C2570248E00F78A9E /* EasyBundles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyBundles.swift; sourceTree = "<group>"; };
 		4901113D2570248E00F78A9E /* EasySnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasySnapKit.swift; sourceTree = "<group>"; };
-		49CA086925A598840036FF42 /* EasyScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyScrollView.swift; sourceTree = "<group>"; };
 		49CA086C25A599B10036FF42 /* EasyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTextField.swift; sourceTree = "<group>"; };
 		49CA086F25A59A360036FF42 /* EasyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyLabel.swift; sourceTree = "<group>"; };
 		6AF2FBBA177845FA96D81747 /* Pods-EasyUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyUIKit.release.xcconfig"; path = "Target Support Files/Pods-EasyUIKit/Pods-EasyUIKit.release.xcconfig"; sourceTree = "<group>"; };
+		8FFB2BDB2832989200389B95 /* EasyArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyArray.swift; sourceTree = "<group>"; };
+		8FFB2BDD28329EA200389B95 /* EasyApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyApplication.swift; sourceTree = "<group>"; };
+		8FFB2BDF28329F1500389B95 /* EasyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyButton.swift; sourceTree = "<group>"; };
+		8FFB2BE12832A06100389B95 /* EasyImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyImage.swift; sourceTree = "<group>"; };
+		8FFB2BE32832A09600389B95 /* EasyDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyDate.swift; sourceTree = "<group>"; };
+		8FFB2BE62832A0A000389B95 /* EasyScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyScrollView.swift; path = "../../../Mobile/build-mobile/ios/PlanUI/Source/UIKit/EasyModifiers/EasyScrollView.swift"; sourceTree = "<group>"; };
+		8FFB2BE92832A1E400389B95 /* EasyCollectionViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyCollectionViews.swift; sourceTree = "<group>"; };
 		E6643A0CCF095CE65448D6A8 /* Pods-EasyUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyUIKit.debug.xcconfig"; path = "Target Support Files/Pods-EasyUIKit/Pods-EasyUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +119,7 @@
 		4901112D2570247B00F78A9E /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				8FFB2BDB2832989200389B95 /* EasyArray.swift */,
 				4901113D2570248E00F78A9E /* EasySnapKit.swift */,
 				4901113A2570248E00F78A9E /* EasyAlerts.swift */,
 				4901113C2570248E00F78A9E /* EasyBundles.swift */,
@@ -118,16 +129,20 @@
 				490111352570248E00F78A9E /* EasyNumbers.swift */,
 				4901113B2570248E00F78A9E /* EasyPageControl.swift */,
 				490111332570248E00F78A9E /* EasyShadow.swift */,
+				8FFB2BE32832A09600389B95 /* EasyDate.swift */,
+				8FFB2BE62832A0A000389B95 /* EasyScrollView.swift */,
+				8FFB2BDF28329F1500389B95 /* EasyButton.swift */,
+				8FFB2BE92832A1E400389B95 /* EasyCollectionViews.swift */,
+				8FFB2BE12832A06100389B95 /* EasyImage.swift */,
 				490111342570248E00F78A9E /* EasyStackView.swift */,
-				4901112F2570248E00F78A9E /* EasyCollectionViews.swift */,
 				490111362570248E00F78A9E /* EasyTableViews.swift */,
 				490111322570248E00F78A9E /* EasyTextView.swift */,
 				490111312570248E00F78A9E /* EasyTransform.swift */,
 				490111372570248E00F78A9E /* EasyURL.swift */,
 				490111382570248E00F78A9E /* EasyViews.swift */,
-				49CA086925A598840036FF42 /* EasyScrollView.swift */,
 				49CA086C25A599B10036FF42 /* EasyTextField.swift */,
 				49CA086F25A59A360036FF42 /* EasyLabel.swift */,
+				8FFB2BDD28329EA200389B95 /* EasyApplication.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -257,19 +272,24 @@
 			files = (
 				490111482570248E00F78A9E /* EasyViews.swift in Sources */,
 				490111412570248E00F78A9E /* EasyTransform.swift in Sources */,
+				8FFB2BDE28329EA200389B95 /* EasyApplication.swift in Sources */,
+				8FFB2BE82832A0A100389B95 /* EasyScrollView.swift in Sources */,
+				8FFB2BEA2832A1E400389B95 /* EasyCollectionViews.swift in Sources */,
 				49CA087025A59A360036FF42 /* EasyLabel.swift in Sources */,
 				4901114C2570248E00F78A9E /* EasyBundles.swift in Sources */,
 				490111432570248E00F78A9E /* EasyShadow.swift in Sources */,
 				490111452570248E00F78A9E /* EasyNumbers.swift in Sources */,
 				49CA086D25A599B10036FF42 /* EasyTextField.swift in Sources */,
 				4901114A2570248E00F78A9E /* EasyAlerts.swift in Sources */,
-				4901113F2570248E00F78A9E /* EasyCollectionViews.swift in Sources */,
+				8FFB2BE42832A09600389B95 /* EasyDate.swift in Sources */,
 				490111422570248E00F78A9E /* EasyTextView.swift in Sources */,
 				4901114D2570248E00F78A9E /* EasySnapKit.swift in Sources */,
+				8FFB2BDC2832989200389B95 /* EasyArray.swift in Sources */,
 				490111442570248E00F78A9E /* EasyStackView.swift in Sources */,
 				4901114B2570248E00F78A9E /* EasyPageControl.swift in Sources */,
-				49CA086A25A598840036FF42 /* EasyScrollView.swift in Sources */,
 				490111402570248E00F78A9E /* EasyNavigationBar.swift in Sources */,
+				8FFB2BE028329F1500389B95 /* EasyButton.swift in Sources */,
+				8FFB2BE22832A06100389B95 /* EasyImage.swift in Sources */,
 				490111462570248E00F78A9E /* EasyTableViews.swift in Sources */,
 				4901113E2570248E00F78A9E /* EasyGeometry.swift in Sources */,
 				490111472570248E00F78A9E /* EasyURL.swift in Sources */,
@@ -420,7 +440,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = git.shshalom.EasyUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -448,7 +468,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = git.shshalom.EasyUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

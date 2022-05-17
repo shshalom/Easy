@@ -36,15 +36,3 @@ public extension String {
     }
 
 }
-
-public extension UIApplication {
-    var topViewController: UIViewController? {
-        if let topController = UIApplication.shared.windows.filter({$0.isKeyWindow}).first?.rootViewController {
-            while let presentedViewController = topController.presentedViewController {
-                return presentedViewController
-            }
-            return topController
-        }
-        return nil
-    }
-}

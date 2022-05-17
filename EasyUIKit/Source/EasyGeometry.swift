@@ -9,26 +9,26 @@
 import CoreGraphics
 import UIKit
 
-public extension CGSize {
-    var asRect: CGRect {
+extension CGSize {
+    public var asRect: CGRect {
         CGRect(origin: .zero, size: self)
     }
 }
 
-public extension Int {
-    var cgSize: CGSize {
+extension Int {
+    public var cgSize: CGSize {
         CGSize(width: self, height: self)
     }
 }
 
-public extension CGFloat {
-    var cgSize: CGSize {
+extension CGFloat {
+    public var cgSize: CGSize {
         CGSize(width: self, height: self)
     }
 }
 
-public extension Double {
-    var cgSize: CGSize {
+extension Double {
+    public var cgSize: CGSize {
         CGSize(width: self, height: self)
     }
 }
@@ -41,66 +41,89 @@ public enum UIEdgeInset: Hashable {
     case margin(CGFloat)
 }
 
-public extension UIEdgeInsets {
-    init(_ set: [UIEdgeInset]) {
+extension UIEdgeInsets {
+    public init(_ set: UIEdgeInset) {
         self.init()
-        
-       for edge in set {
-            switch edge {
-            case let .top(value):
-                self.top = value
-            case let .left(value):
-                self.left = value
-            case let .right(value):
-                self.right = value
-            case let .bottom(value):
-                self.bottom = value
-            case let .margin(value):
-                left = value
-                right = value
-                top = value
-                bottom = value
-            }
+
+        switch set {
+        case let .top(value):
+            self.top = value
+        case let .left(value):
+            self.left = value
+        case let .right(value):
+            self.right = value
+        case let .bottom(value):
+            self.bottom = value
+        case let .margin(value):
+            left = value
+            right = value
+            top = value
+            bottom = value
         }
     }
-    
-    static func set(_ set: UIEdgeInset...) -> UIEdgeInsets {
+
+    private static func set(_ set: UIEdgeInset) -> UIEdgeInsets {
         return UIEdgeInsets(set)
     }
-    
-    static func left(_ value: CGFloat) -> UIEdgeInsets {
+
+    public static func left(_ value: CGFloat) -> UIEdgeInsets {
         return .set(.left(value))
     }
-    
-    static func right(_ value: CGFloat) -> UIEdgeInsets {
+
+    public static func right(_ value: CGFloat) -> UIEdgeInsets {
         return .set(.right(value))
     }
-    
-    static func top(_ value: CGFloat) -> UIEdgeInsets {
+
+    public static func top(_ value: CGFloat) -> UIEdgeInsets {
         return .set(.top(value))
     }
-    
-    static func bottom(_ value: CGFloat) -> UIEdgeInsets {
+
+    public static func bottom(_ value: CGFloat) -> UIEdgeInsets {
         return .set(.bottom(value))
     }
-    
-    static func margin(_ value: CGFloat) -> UIEdgeInsets {
-       return .set(.margin(value))
+
+    public static func margin(_ value: CGFloat) -> UIEdgeInsets {
+        return .set(.margin(value))
     }
 }
 
-public extension UITableView {
-    @discardableResult
-    func separator(inset: UIEdgeInset...) -> Self {
-        self.separatorInset = UIEdgeInsets(inset)
+extension UIEdgeInsets {
+    public func top(_ value: CGFloat) -> Self {
+        var `self` = self
+        self.top = value
+        return self
+    }
+
+    public func bottom(_ value: CGFloat) -> Self {
+        var `self` = self
+        self.bottom = value
+        return self
+    }
+
+    public func left(_ value: CGFloat) -> Self {
+        var `self` = self
+        self.left = value
+        return self
+    }
+
+    public func right(_ value: CGFloat) -> Self {
+        var `self` = self
+        self.right = value
         return self
     }
 }
 
-public extension UICollectionView {
-    @discardableResult
-    func content(inset: UIEdgeInset...) -> Self {
-        self.contentInset = UIEdgeInsets(inset)
-        return self
+extension String {
+    // parse any format of "(value, value, value, value) into CGRect type
+    public var asRect: CGRect {
+        let values = self.components(separatedBy: .init(charactersIn: "(), ")).reduce([CGFloat]()) {
+            if let x = Float($1) {
+                return $0 + [CGFloat(x)]
+            } else {
+                return $0
+            }
+        }
+
+        return values.count == 4 ? CGRect(x: values[0], y: values[1], width: values[2], height: values[3]) : .zero
     }
 }

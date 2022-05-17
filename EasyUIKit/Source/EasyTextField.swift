@@ -8,72 +8,121 @@
 
 import UIKit
 
-public extension UITextField {
-    @discardableResult func font(_ font: UIFont) -> Self {
+extension UITextField {
+    @discardableResult
+    public func font(_ font: UIFont) -> Self {
         self.font = font
         return self
     }
-    
-    @discardableResult func adjustsFontSizeToFitWidth(_ adjust: Bool) -> Self {
+
+    @discardableResult
+    public func adjustsFontSizeToFitWidth(_ adjust: Bool) -> Self {
         self.adjustsFontSizeToFitWidth = adjust
         return self
     }
-    
-    @discardableResult func textColor(_ color: UIColor) -> Self {
+
+    @discardableResult
+    public func textColor(_ color: UIColor) -> Self {
         self.textColor = color
         return self
     }
-    
-    @discardableResult func textAlignment(_ textAlignment: NSTextAlignment) -> Self {
+
+    @discardableResult
+    public func textAlignment(_ textAlignment: NSTextAlignment) -> Self {
         self.textAlignment = textAlignment
         return self
     }
-    
-    @discardableResult func leftPadding(_ value: CGFloat) -> Self {
-        let paddingView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: value, height: frame.size.height))
+
+    @discardableResult
+    public func leftPadding(_ value: CGFloat) -> Self {
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: value, height: frame.size.height))
         self.leftView = paddingView
         self.leftViewMode = .always
-        
+
         return self
     }
-    
-    @discardableResult func secured() -> Self {
+
+    @discardableResult
+    public func secured() -> Self {
         self.isSecureTextEntry = true
         return self
     }
-    
-    @discardableResult func placeholder(_ value: String) -> Self {
+
+    @discardableResult
+    public func placeholder(_ value: String) -> Self {
         self.placeholder = value
         return self
     }
-    
-    @discardableResult func keyboard(type: UIKeyboardType) -> Self {
+
+    @discardableResult
+    public func keyboard(type: UIKeyboardType) -> Self {
         keyboardType = type
         return self
     }
-    
-    @discardableResult func text(_ text: String) -> Self {
+
+    @discardableResult
+    public func autocorrect(_ value: Bool) -> Self {
+        autocorrectionType = value ? .yes : .no
+        return self
+    }
+
+    @discardableResult
+    public func text(_ text: String) -> Self {
         self.text = text
         return self
     }
 
-    @discardableResult func returnKey(type: UIReturnKeyType) -> Self {
+    @discardableResult
+    public func returnKey(type: UIReturnKeyType) -> Self {
         self.returnKeyType = type
         return self
     }
-    
-    @discardableResult func textContent(type: UITextContentType) -> Self {
+
+    @discardableResult
+    public func textContent(type: UITextContentType) -> Self {
         self.textContentType = type
         return self
     }
-    
-    @discardableResult func delegate(_ delegate: UITextFieldDelegate?) -> Self {
+
+    @discardableResult
+    public func rightView(mode: ViewMode) -> Self {
+        self.rightViewMode = mode
+        return self
+    }
+
+    @discardableResult
+    public func clearButton(mode: ViewMode) -> Self {
+        self.clearButtonMode = mode
+        return self
+    }
+
+    @discardableResult
+    public func rightView(_ view: UIView, mode: ViewMode = .always) -> Self {
+        self.rightView = view
+        self.rightViewMode = mode
+        return self
+    }
+
+    @discardableResult
+    public func leftView(_ view: UIView, padding: CGFloat = 0, mode: ViewMode = .always) -> Self {
+
+        let v = UIView().add(subviews: view)
+        v.frame = view.bounds
+        v.frame.size.width += padding
+        self.leftView = v
+        self.leftViewMode = mode
+        return self
+    }
+
+    @discardableResult
+    public func delegate(_ delegate: UITextFieldDelegate?) -> Self {
         self.delegate = delegate
         return self
     }
-    
-    @discardableResult func addDoneButtonToKeyboard() -> Self {
-        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 300, height: 40))
+
+    @discardableResult
+    public func addDoneButtonToKeyboard() -> Self {
+        let doneToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 300, height: 40))
         doneToolbar.barStyle = UIBarStyle.default
         let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
         let done = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(resignFirstResponder))
@@ -86,4 +135,3 @@ public extension UITextField {
         return self
     }
 }
-

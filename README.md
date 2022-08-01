@@ -125,7 +125,7 @@ let vStack = [row1, row2].stack(.vertical)       |  row2.axis = .horizontal
 
 ## Authors
 Shalom Shwaitzer, shalom.shwaitzer@gmail.com
-eliransha88, eliransha88@gmail.com
+Eliran Sharabi, eliransha88@gmail.com
 
 ## License
 EasyUIKit is available under the MIT license. See the LICENSE file for more info.
